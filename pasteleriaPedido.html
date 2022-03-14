@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Levantar pedido </title>
+
+</head>
+<style>
+
+    .fondoColor{
+    background-color: #335555;
+    }
+
+    
+
+    h1{ 
+        color: rgb(15, 189, 189);
+        font-style: oblique;
+        text-align: center;
+    
+    }
+    h2, h3{
+        color: rgb(253, 7, 81);
+        font-style: oblique;
+    
+    }
+
+    p{
+
+        color: rgb(0, 0, 0);
+        font-style: oblique;
+
+        
+
+
+
+    }
+
+
+
+
+</style>
+<body>
+
+    <img src="./logoPasteleria.png" alt="logo Mon Coer" width="150px">
+
+    <a href="./pasteleriaInicio.html">
+        <input type="button" value="Volver al menú">
+        </a>
+        <br><br>
+
+    <h1>Realiza tu pedido aquí</h1>
+
+    <form action="pedido.js">
+
+        <label for="Nombre">Indica tu nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br>
+       
+        
+        <label for="numero1"> Indica tu número de contacto </label><br>
+        <input type="number" id="numero1" name="numero1" placeholder="Teléfono"><br>
+
+        <label for="correo1"> Indica tu correo electrónico </label><br>
+        <input type="email" id="correo1" name="correo1" placeholder="Correo"><br>
+
+        <label for="direccion"> Indica tu dirección y referencias para envío </label><br>
+        <input type="direccion" id="direccion" name="direccion" placeholder="Dirección"><br>        
+
+        <p>Bríndanos las indicaciones de tu pastel <br>
+            personalizado si es el caso para que te <br>
+             contactemos 
+            para la cotización y detalles</p>
+        <input type="text" id="descripcion" >
+
+        <hr>
+
+        <h3>Escoge el sabor de tu pastel</h3><br>
+        
+        <input type="radio" id="Chocolate" name="sabor" value="Chocolate">
+        <label for="Chocolate">Chocolate</label><br>
+
+        <input type="radio" id="TresLeches" name="sabor" value="Tres Leches">
+        <label for="">Tres Leches</label><br>
+
+        <input type="radio" id="Chocoflan" name="sabor" value="Chocoflan">
+        <label for="Chocoflan">Chocoflan</label><br>
+
+        <input type="radio" id="Zanahoria" name="sabor" value="Zanahoria">
+        <label for="Zanahoria">Zanahoria</label><br>
+
+        <input type="radio" id="Choco-menta" name="sabor" value="Choco-menta">
+        <label for="Choco-menta">Choco-menta</label><br><br>
+
+        <h3>Si quieres mezclar sabores escoge aquí. (De 3 sabores en adelante aplica cotización)</h3>
+
+
+
+        
+        <input type="checkbox"  id="Chocolate"  name="Chocolate" value="Chocolate">
+        <label for="Chocolate"> Chocolate </label><br>
+
+        
+        <input type="checkbox"  id="Chocolate Blanco"  name="Chocolate Blanco" value="Chocolate Blanco">
+        <label for="Chocolate Blanco"> Chocolate Blanco </label><br>
+
+        <input type="checkbox"  id="Chocolate Negro"  name="Chocolate Negro" value="Chocolate Negro">
+        <label for="Chocolate Negro"> Chocolate Negro </label><br>
+
+        <input type="checkbox"  id="Cajeta"  name="Cajeta" value="Cajeta">
+        <label for="Cajeta"> Cajeta </label><br>
+
+        <input type="checkbox"  id="Menta"  name="Menta" value="Menta">
+        <label for="Menta"> Menta </label><br>
+
+        <input type="checkbox"  id="Vainilla"  name="Vainilla" value="Vainilla">
+        <label for="Vainilla"> Vainilla </label><br>
+
+        <input type="checkbox"  id="Tres leches"  name="Tres leches" value="Tres leches">
+        <label for="Tres leches"> Tres leches </label><br>
+
+        <input type="checkbox"  id="Nuez"  name="Nuez" value="Nuez">
+        <label for="Nuez"> Nuez </label><br>
+
+        <input type="checkbox"  id="Zanahoria"  name="Zanahoria" value="Zanahoria">
+        <label for="Zanahoria"> Zanahoria </label><br>
+        
+        <h3>Escoge tus decoraciones</h3>
+
+        <p>Perlas</p>
+
+
+        <input type="checkbox"  id="Doradas"  name="perlas" value="Doradas">
+        <label for="Doradas"> Doradas </label>
+        <input type="number" id="Doradas" name="DoradasCuantas"> <br>
+
+        <input type="checkbox"  id="Rosas"  name="perlas" value="Rosas">
+        <label for="Rosas"> Rosas </label>
+        <input type="number" id="Rosas" name="RosasCuantas"> <br>
+
+        <input type="checkbox"  id="Plateadas"  name="perlas" value="Plateadas">
+        <label for="Plateadas"> Plateadas </label>
+        <input type="number" id="Plateadas" name="PlateadasCuantas"> <br>
+
+        <p>Figuras Fondant</p>
+
+        <input type="checkbox" id="Pequeña" name="Pequeña" value="Pequeña">
+        <label for="Pequeña">Pequeña</label><br>
+
+        <input type="checkbox" id="Mediana" name="Mediana" value="Mediana">
+        <label for="Mediana">Mediana</label><br>
+
+        <input type="checkbox" id="Grande" name="Grande" value="Grande">
+        <label for="Grande">Grande</label><br>
+
+        <p>Figuras plásticas</p>
+    
+        <input type="checkbox" id="Princesas" name="Princesas" value="Princesas">
+        <label for="Princesas">Princesas</label><br>
+
+        <input type="checkbox" id="Superhéroes" name="Superhéroes" value="Superhéroes">
+        <label for="Superhéroes">Superhéroes</label><br>
+
+        <input type="checkbox" id="Animales Zoológico" name="Animales Zoológico" value="Animales Zoológico">
+        <label for="Animales Zoológico">Animales Zoológico</label><br><br>
+     
+        
+        <input type="reset">
+        <input type="submit"><br><br>
+        
+
+
+
+
+    </form>
+
+    <a href="./pasteleriaInicio.html">
+        <input type="button" value="Volver al menú">
+        </a>
+        <br><br>
+
+    <h3>Contacto</h3>
+    <p>Dirección: Tonalá 66, Roma Nte,<br> Cuauhtémoc, 06700 Ciudad de México, CDMX</p>
+    <p>Horario de atención: 11:00am a 10:00pm Lunes a Sábado</p>
+    <p>Domingos 11:00am a 8:00pm</p>
+    <p>Número de contacto: 55-56243660 y 55-56471520</p>
+
+</body>
